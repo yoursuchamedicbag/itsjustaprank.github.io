@@ -1,0 +1,17 @@
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["ip"].value;
+  if (x == "") {
+    alert("IP is needed!");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+<form name="myForm" action="//BASDK12.LOCAL/STUDENT/HOME/18000220/Documents/My Web Sites/action_page.php" onsubmit="return validateForm()" method="post">
+IP: <input type="text" name="ip">
+<input type="submit" value="Submit">
+</form>
+</body>
